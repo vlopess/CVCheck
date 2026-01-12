@@ -18,11 +18,34 @@ import './App.css'
 import Logo from './assets/logo.png';
 
 
+interface ActionableTips {
+  topic: string;
+  suggestion: string;
+  example: string;
+}
+
+interface Comparison {
+  improvedSnippet: string;
+  originalSnippet: string;
+}
+
+interface OverallFeedback {
+  score: number;
+  strengths: string[];
+  weaknesses: string[];
+  internationalAlignment: string;
+  overallFeedback: string;
+  actionableTips: ActionableTips[];
+  comparison: Comparison;
+}
+
+
+
 const App = () => {
   const [resumeText, setResumeText] = useState('');
   const [isAnalyzing, setIsAnalyzing] = useState(false);
-  const [result, setResult] = useState(null);
-  const [error, setError] = useState(null);
+  const [result, setResult] = useState<OverallFeedback | null>(null);
+  const [error, setError] = useState<String | null>('');
 
   const analyzeResume = async () => {
     if (!resumeText.trim() || resumeText.length < 100) {
@@ -127,7 +150,7 @@ const App = () => {
             <a href="#analyzer" className="hover:text-indigo-600 transition-colors">Analisador</a>
           </div>
           <button 
-            onClick={() => document.getElementById('analyzer').scrollIntoView({ behavior: 'smooth' })}
+            onClick={() => document.getElementById('analyzer')?.scrollIntoView({ behavior: 'smooth' })}
             className="bg-indigo-600 text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-indigo-700 transition-all shadow-md hover:shadow-indigo-200"
           >
             Analisar Agora
