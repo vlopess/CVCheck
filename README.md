@@ -50,19 +50,7 @@ O objetivo é ajudar candidatos a entender:
 
 ## 🛠️ Stack (MVP)
 
-- Frontend: React / Next.js
+- Frontend: React
 - UI: Tailwind CSS
 - Análise de texto: LLM / AI
-- Deploy: Vercel (ou similar)
-
----
-
-## 📌 Status do Projeto
-
-🚧 Em desenvolvimento (MVP)
-
----
-
-## 📄 Licença
-
-Este projeto é open-source e está sob a licença MIT.
+- Deploy: Netlify 
