@@ -63,6 +63,21 @@ export const pt: I18nSchema = {
     targetMarkets: "Mercados Alvo",
     newAnalysis: "Analisar um novo documento",
     langPrompt: "Português",
+    generatorTitle: "Currículo Profissional (LaTeX Template)",
+
+    generatorDesc:
+        "Transforme suas informações em um currículo estruturado em LaTeX. O conteúdo gerado é editável e pode ser ajustado antes da compilação para PDF.",
+
+    generatorBtn: "Criar Currículo",
+
+    generatorCopy: "Copiar Template LaTeX",
+
+    generatorDownload: "Download do .tex",
+
+    generatorPdf: "Compilar para PDF",
+
+    generatorResult: "Template gerado — revise e personalize antes de usar",
+    generatorSuccess: "Código copiado para a área de transferência!",
     RESUME_ANALYSIS_PROMPT: `
       Você é um Recrutador Internacional e Career Coach especialista em contratações para os EUA, Europa e vagas remotas globais.
 

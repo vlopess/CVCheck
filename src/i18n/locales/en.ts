@@ -60,6 +60,23 @@ export const en: I18nSchema = {
     targetMarkets: "Target Markets",
     newAnalysis: "Analyze a new document",
     langPrompt: "English",
+    generatorTitle: "Professional Resume Generator (LaTeX)",
+
+    generatorDesc:
+        "Convert your information into a clean, professional LaTeX resume template. The generated file is fully editable — copy, customize, and compile it as needed.",
+
+    generatorBtn: "Generate LaTeX Resume",
+
+    generatorCopy: "Copy .tex Code",
+
+    generatorDownload: "Download .tex File",
+
+    generatorPdf: "Compile to PDF",
+
+    generatorSuccess: "Code copied to clipboard!",
+    generatorResult: "Template generated — review and edit before finalizing",
+
+
     RESUME_ANALYSIS_PROMPT: `
 You are an International Recruiter and Career Coach specializing in hiring for US, European, and global remote positions.
 
@@ -99,6 +116,5 @@ Respond **exclusively** in JSON with the following format:
 "originalSnippet": string, 
 "improvedSnippet": string 
 } 
-}
-      `
-}
+}`
+};

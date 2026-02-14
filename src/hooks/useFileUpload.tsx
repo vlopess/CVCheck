@@ -2,7 +2,7 @@ import { useRef, useState } from 'react'
 import {extractTextFromPdf} from "../services/extractTextFromPdf.ts";
 
 export function useFileUpload() {
-    const inputRef = useRef<HTMLInputElement | null>(null)
+    const inputRef = useRef<HTMLInputElement | null>(null!)
     const [fileName, setFileName] = useState('')
     const [content, setContent] = useState('')
 

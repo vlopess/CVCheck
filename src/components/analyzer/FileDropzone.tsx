@@ -1,11 +1,11 @@
 import { Upload, FileCheck, XCircle } from 'lucide-react'
-import { RefObject } from 'react'
 import {useI18n} from "../../i18n";
+import type {RefObject} from "react";
 
 interface Props {
     fileName: string
     onFile: (file: File) => void
-    inputRef: RefObject<HTMLInputElement>
+    inputRef: RefObject<HTMLInputElement> | null
     onReset: () => void
 }
 
@@ -29,7 +29,7 @@ export function FileDropzone({ fileName, onFile, inputRef, onReset }: Props) {
 
     return (
         <div
-            onClick={() => inputRef.current?.click()}
+            onClick={() => inputRef?.current?.click!()}
             className="cursor-pointer border-2 border-dashed rounded-3xl p-12 flex flex-col items-center gap-6 hover:border-indigo-400"
         >
             <input

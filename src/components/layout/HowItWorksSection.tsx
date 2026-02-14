@@ -1,4 +1,4 @@
-import { Search, TrendingUp, FileCheck, Cpu } from "lucide-react";
+import { Search, TrendingUp, FileCheck } from "lucide-react";
 import {useI18n} from "../../i18n";
 
 export function HowItWorksSection() {

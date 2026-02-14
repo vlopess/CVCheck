@@ -1,9 +1,6 @@
-import type {OverallFeedback} from "../models/OverallFeedback.ts";
-import {useI18n} from "../i18n";
-
 export async function analyzeResumeText(
     resumeText: string, prompt: string
-): Promise<OverallFeedback> {
+): Promise<any> {
     const res = await fetch(
         'https://api.groq.com/openai/v1/chat/completions',
         {
@@ -31,5 +28,5 @@ export async function analyzeResumeText(
         throw new Error('Resposta vazia da API')
     }
 
-    return JSON.parse(content)
+    return (content)
 }

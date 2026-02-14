@@ -6,6 +6,7 @@ import {Footer} from "./components/layout/Footer.tsx";
 import {I18nProvider} from "./i18n";
 import {HowItWorksSection} from "./components/layout/HowItWorksSection.tsx";
 import {AnalyzerSectionWrapper} from "./components/analyzer/AnalyzerSectionWrapper.tsx";
+import {GeneratorResume} from "./components/GeneratorResume/GeneratorResume.tsx";
 
 
 
@@ -20,6 +21,7 @@ export default function App() {
           <AnalyzerSectionWrapper>
             <AnalyzerContainer />
           </AnalyzerSectionWrapper>
+          <GeneratorResume/>
           <Footer />
         </I18nProvider>
       </>
